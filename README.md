@@ -217,4 +217,5 @@ TBA
 * [Research and academic use license](https://www.audeering.com/research-and-open-source/files/openSMILE-open-source-license.txt)
 * [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 * [MIT License](https://opensource.org/licenses/MIT)
+* [Other opensource licenses](https://choosealicense.com/licenses/)
 * [3 clause BSD license](https://opensource.org/licenses/BSD-3-Clause)

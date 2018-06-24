@@ -3,27 +3,25 @@ Repo for quick access to copy/paste info of licenses into code base.
 
 # Research and academic use license
 
-        openSMILE Version 2.x
-          - open Speech and Music Interpretation by Large-space Extraction -
-         Authors: Florian Eyben, Felix Weninger, Martin Woellmer, Bjoern Schuller
-         Copyright (C) 2008-2013, Institute for Human-Machine Communication, TUM
-         Copyright (C) 2013-2014, audEERING UG (haftungsbeschrÃ¤nkt)
+        [Package] version 1.x
+          - To build and optimize machine learning models -
+         Author: Jim Schwoebel
+         Copyright (C) 2017, NeuroLex Laboratories, Inc.
 
-         audEERING UG (haftungsbeschrÃ¤nkt)
-         Gilching, Germany
-         http://www.audeeering.com/
+         NeuroLex Laboratories, Inc. 
+         Seattle, WA 
+         http://neurolex.ai 
 
         ********************************************************************** 
-        If you use openSMILE or any code from openSMILE in your research work,
-        you are kindly asked to acknowledge the use of openSMILE in your publications.
-        See the file CITING.txt for details.
+        If you use [Package] or any code from [Package] in your research work,
+        you are kindly asked to acknowledge the use of [Package] in your publications.
+        
         **********************************************************************
 
 
-       This audEERING Research License Agreement (license, license agreement, 
+       This NeuroLex Research License Agreement (license, license agreement, 
        or agreement in the ongoing), is a legal agreement between you 
-       and audEERING UG (haftungsbeschrÃ¤nkt), 
-       Gilching, Germany (audEERING or we) for the software 
+       and NeuroLex Laboratories, Inc. ('NeuroLex' or we) for the software 
        or data mentioned above, which may include source code, 
        and any associated materials, text or speech files, 
        associated media and "on-line" or electronic documentation 
@@ -60,7 +58,7 @@ Repo for quick access to copy/paste info of licenses into code base.
           are more of an evaluatory, planning, and research nature than of a product development
           nature. 
           Any further commercial use requires you to obtain a commercial
-          license or written approval from audEERING UG (limited) which grants
+          license or written approval from NeuroLex which grants
           you extended usage rights for this software. In particular any direct 
           (software) or indirect (models, features extracted with the software)
           use of the software, parts of the software, or derivatives in a 
@@ -88,7 +86,7 @@ Repo for quick access to copy/paste info of licenses into code base.
           to modify such portions of the software, or to reverse engineer or 
           decompile them, except and only to the extent authorized by applicable 
           law. 
-       3. That the copyright holders (audEERING) are granted back, 
+       3. That the copyright holders (NeuroLex) are granted back, 
           without any restrictions or limitations, a non-exclusive, perpetual, 
           irrevocable, royalty-free, assignable and sub-licensable license, 
           to reproduce, publicly perform or display, install, use, modify, post, 
@@ -96,10 +94,10 @@ Repo for quick access to copy/paste info of licenses into code base.
           to and/or derivative works of the software source code or data, 
           for any purpose.  
        4. That any feedback about the software provided by you to us is voluntarily 
-          given, and audEERING shall be free to use the feedback 
+          given, and NeuroLex shall be free to use the feedback 
           as they see fit without obligation or restriction of any kind, 
           even if the feedback is designated by you as confidential. 
-
+          
        5. THAT THE SOFTWARE COMES "AS IS", WITH NO WARRANTIES. 
           THIS MEANS NO EXPRESS, IMPLIED OR STATUTORY WARRANTY, INCLUDING 
           WITHOUT LIMITATION, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A 
@@ -109,7 +107,7 @@ Repo for quick access to copy/paste info of licenses into code base.
           PARTICULAR PURPOSES OR NEEDS. ALSO, YOU MUST PASS THIS DISCLAIMER ON 
           WHENEVER YOU DISTRIBUTE THE SOFTWARE OR DERIVATIVE WORKS.
 
-       6. THAT NEITHER TUM NOR AUDEERING NOR ANY AUTHOR OR CONTRIBUTOR TO THE 
+       6. THAT NEITHER NEUROLEX NOR ANY AUTHOR OR CONTRIBUTOR TO THE 
           SOFTWARE WILL BE LIABLE FOR ANY DAMAGES RELATED TO THE SOFTWARE OR THIS 
           LICENSE, INCLUDING DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL OR INCIDENTAL 
           DAMAGES, TO THE MAXIMUM EXTENT THE LAW PERMITS, NO MATTER WHAT LEGAL 
@@ -128,48 +126,20 @@ Repo for quick access to copy/paste info of licenses into code base.
           any termination of this license agreement.
        9. That the patent rights, if any, granted to you in this license agreement 
           only apply to the software, not to any derivative works you make.
-       10.That the software may be subject to European export or import laws or such 
+       10.That the software may be subject to United States export or import laws or such 
           laws in other places. You agree to comply with all such laws and regulations 
           that may apply to the software after the delivery of the software to you.
        11.That all rights not expressly granted to you in this license agreement 
-          are reserved by audEERING.
+          are reserved by NeuroLex.
        12.That this license agreement shall be construed and controlled by the laws 
-          of the Federal Republic of Germany, without regard to conflicts of law. 
+          of Delaware (United States of America), without regard to conflicts of law. 
           If any provision of this license agreement shall be deemed unenforceable 
           or contrary to law, the rest of this license agreement shall remain in 
           full effect and interpreted in an enforceable manner that most closely 
           captures the intent of the original language. 
 
         ++ For other, such as commercial, licensing options, 
-           please contact audEERING at info@audeering.com ++
-
-
-       openSMILE contains third-party contributions from the Speex codec package 
-       (in the cLsp component), which are distributed unter the following terms:
-       -----------------------------------------------------------------------
-       Copyright 2002-2008     Xiph.org Foundation
-       Copyright 2002-2008     Jean-Marc Valin
-       Copyright 2005-2007     Analog Devices Inc.
-       Copyright 2005-2008     Commonwealth Scientific and Industrial Research
-                               Organisation (CSIRO)
-       Copyright 1993, 2002, 2006 David Rowe
-       Copyright 2003          EpicGames
-       Copyright 1992-1994     Jutta Degener, Carsten Bormann
-
-       Redistribution and use in source and binary forms, with or without
-       modification, are permitted provided that the following conditions
-       are met:
-
-       - Redistributions of source code must retain the above copyright
-       notice, this list of conditions and the following disclaimer.
-
-       - Redistributions in binary form must reproduce the above copyright
-       notice, this list of conditions and the following disclaimer in the
-       documentation and/or other materials provided with the distribution.
-
-       - Neither the name of the Xiph.org Foundation nor the names of its
-       contributors may be used to endorse or promote products derived from
-       this software without specific prior written permission.
+           please contact NeuroLex at info@neurolex.ai ++
 
        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
        ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -182,77 +152,6 @@ Repo for quick access to copy/paste info of licenses into code base.
        LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-       -----------------------------------------------------------------------
-
-
-       About openSMILE:
-       ================
-
-       openSMILE is a complete and open-source toolkit for audio analysis, 
-       processing and classification especially targeted at speech and music applications, 
-       e.g. ASR, emotion recognition, or beat tracking and chord detection.
-       The toolkit was developed at the Institute for Human-Machine Communication 
-       at the Technische Universitaet Muenchen in Munich, Germany.
-       It was started within the SEMAINE EU-FP7 research project.
-       The toolkit is now further maintained and developed
-       by audEERING UG (limited), which provides intelligent
-       audio analysis solutions and consulting services.
-       An open-source version for private use, education, and research
-       will always be available, next to commercial versions with
-       additional features (such as more interface components) or commercial
-       licenses for the basic version.
-
-
-       Third-party dependencies:
-       =========================
-
-       openSMILE uses LibSVM (by Chih-Chung Chang and Chih-Jen Lin) for 
-       classification tasks. It is distributed with openSMILE and is
-        included in the src/classifiers/libsvm/ directory.
-
-       PortAudio is required for live recording from sound card and for 
-       the SEMAINE component.
-       You can get it from: http://www.portaudio.com
-       A working snapshot is included in thirdparty/portaudio.tgz
-
-       Optionally, openSMILE can be linked against the SEMAINE API 
-       and the Julius LVCSR engine, enabling an interface to the 
-       SEMAINE system and a keyword spotter component. 
-       See http://www.semaine-project.eu/ for details on running the 
-       SEMAINE system.
-       Only the older versions (1.0.1) are supported with the SEMAINE 
-       system.
-
-
-
-       Documentation/Installing/Using:
-       ===============================
-
-       openSMILE is well documented in the openSMILE book, which can be 
-       found in doc/openSMILE_book.pdf.
-
-
-       Developers:
-       ===========
-
-       Incomplete developer's documentation can be found in "doc/developer" 
-       and in the openSMILE book.
-
-       Information on how to write and compile run-time linkable plug-ins 
-       for openSMILE, see the openSMILE book or take a look at the files 
-       in the "plugindev" directory, especially the README file.
-
-
-       Getting more help:
-       ==================
-
-       If you encounter problems with openSMILE, and solve them yourself, 
-       please do inform Florian Eyben via e-mail (fe@audeering.com), 
-       so the documentation can be updated!
-
-       If you cannot solve the problems yourself, please do also contact
-       Florian Eyben so we can solve the problem together and update 
-       the documentation.
 
 # Apache 2.0 license 
 

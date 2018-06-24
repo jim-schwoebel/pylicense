@@ -7,7 +7,7 @@ It's separated into 3 sections: commercial licenses (no redistribution at all), 
 
 ## 
 
-## Copyright notice (Trade secrets)
+## Copyright notice (trade secrets)
 
         /* Copyright (C) NeuroLex Laboratories, Inc - All Rights Reserved
          * Unauthorized copying of this file, via any medium is strictly prohibited

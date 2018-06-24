@@ -25,6 +25,9 @@ Repo for quick access to copy/paste info of licenses into code base.
         If you use [Package] or any code from [Package] in your research work,
         you are kindly asked to acknowledge the use of [Package] in your publications.
         
+        Jim Schwoebel: “NLX-model - Extension of the Auto-ML movement to audio, text, image, and video data”, 
+        [paper info].
+        
         **********************************************************************
 
 

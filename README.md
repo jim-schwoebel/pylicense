@@ -1,6 +1,8 @@
 # license_info
 Repo for quick access to copy/paste info of licenses into code base.
 
+It's separated into 3 sections: commercial licesnes, research licenses 
+
 # Commercial licenses 
 
 ## 
@@ -16,8 +18,6 @@ Repo for quick access to copy/paste info of licenses into code base.
 # Research licenses 
 
 ## Research and academic use license
-
-### Custom research license 
 
         [Package] version 1.x
           - To build and optimize machine learning models -
@@ -172,7 +172,7 @@ Repo for quick access to copy/paste info of licenses into code base.
        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
        
-### Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported
+## Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported
 
         You are free to:
         

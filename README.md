@@ -4,7 +4,7 @@ Repo for quick access to copy/paste info of licenses into code base.
 # Service statement
 
        For commercial use, we provide individualised, flexible commercial licensing options 
-       for any project size and budget.    We also offer ready-to-use speech analysis services 
+       for any project size and budget. We also offer ready-to-use speech analysis services 
        and software products based on our proprietary extensions to the openSMILE core. 
        Expert technical support is also available to help you get started and integrate 
        openSMILE in your developments quickly. Contact us today to receive your customized 

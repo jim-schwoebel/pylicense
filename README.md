@@ -244,7 +244,7 @@ It's separated into 3 sections: commercial licenses (no redistribution at all), 
 
        If you are using the code written for a larger project, we are happy to consult with you
        and help you with deployment. Our team has >10 world experts in kafka distributed architectures,
-       microservices built on top of Node.JS / python / docker, and machine learning / deep learning. 
+       microservices built on top of Node.JS / python / docker, and machine learning of speech and text data. 
        
        We've helped a wide variety of enterprises - small businesses, researchers, enterprises, 
        and/or independent developers. If you'd like to work with us to help you, let us know @ js@neurolex.co 

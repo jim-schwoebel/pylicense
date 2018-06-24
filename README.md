@@ -1,7 +1,13 @@
 # license_info
 Repo for quick access to copy/paste info of licenses into code base.
 
-# Research and academic use license
+# Commercial licenses 
+
+TBA 
+
+# Research licenses 
+
+## Research and academic use license
 
         [Package] version 1.x
           - To build and optimize machine learning models -
@@ -156,7 +162,18 @@ Repo for quick access to copy/paste info of licenses into code base.
        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Apache 2.0 license 
+## Service statement
+
+       For commercial use, we provide individualized, flexible commercial licensing options 
+       for any project size and budget. We also offer ready-to-use speech analysis services 
+       and software products based on our proprietary extensions to this software. 
+       Expert technical support is also available to help you get started and integrate 
+       our software in your development cycle quickly. Contact us today @ js@neurolex.co to receive 
+       your customized offer and talk about your possibilities!
+       
+# Open-source licenses 
+
+## Apache 2.0 license 
 
     Copyright [yyyy] [name of copyright owner]
 
@@ -172,7 +189,7 @@ Repo for quick access to copy/paste info of licenses into code base.
     See the License for the specific language governing permissions and
     limitations under the License.
 
-# MIT License
+## MIT License
 
     Copyright <YEAR> <COPYRIGHT HOLDER>
 
@@ -182,7 +199,7 @@ Repo for quick access to copy/paste info of licenses into code base.
 
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# 3 Clause BSD license
+## 3 Clause BSD license
 
     Copyright <YEAR> <COPYRIGHT HOLDER>
 
@@ -195,15 +212,6 @@ Repo for quick access to copy/paste info of licenses into code base.
     3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-    
-# Service statement
-
-       For commercial use, we provide individualized, flexible commercial licensing options 
-       for any project size and budget. We also offer ready-to-use speech analysis services 
-       and software products based on our proprietary extensions to this software. 
-       Expert technical support is also available to help you get started and integrate 
-       our software in your development cycle quickly. Contact us today @ js@neurolex.co to receive 
-       your customized offer and talk about your possibilities!
 
 # references
 * [Research and academic use license](https://www.audeering.com/research-and-open-source/files/openSMILE-open-source-license.txt)

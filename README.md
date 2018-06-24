@@ -3,11 +3,21 @@ Repo for quick access to copy/paste info of licenses into code base.
 
 # Commercial licenses 
 
-TBA 
+## 
+
+## Copyright notice (Trade secrets)
+
+        /* Copyright (C) NeuroLex Laboratories, Inc - All Rights Reserved
+         * Unauthorized copying of this file, via any medium is strictly prohibited
+         * Proprietary and confidential
+         * Written by Jim Schwoebel <js@neurolex.co>, July 2018
+         */
 
 # Research licenses 
 
 ## Research and academic use license
+
+### Option 1: Like Audeering license 
 
         [Package] version 1.x
           - To build and optimize machine learning models -
@@ -161,6 +171,23 @@ TBA
        LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+       
+### Option 3: Creative Commons License 
+
+        You are free to:
+        
+        Share — copy and redistribute the material in any medium or format
+        The licensor cannot revoke these freedoms as long as you follow the license terms.
+        
+        Under the following terms:
+        
+        Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+        NonCommercial — You may not use the material for commercial purposes.
+        NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+        No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+        
+        More information is available here: https://creativecommons.org/licenses/by-nc-nd/3.0/
 
 ## Service statement
 
@@ -218,4 +245,5 @@ TBA
 * [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 * [MIT License](https://opensource.org/licenses/MIT)
 * [Other opensource licenses](https://choosealicense.com/licenses/)
+* [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/3.0/)
 * [3 clause BSD license](https://opensource.org/licenses/BSD-3-Clause)

@@ -1,15 +1,6 @@
 # license_info
 Repo for quick access to copy/paste info of licenses into code base.
 
-# Service statement
-
-       For commercial use, we provide individualised, flexible commercial licensing options 
-       for any project size and budget. We also offer ready-to-use speech analysis services 
-       and software products based on our proprietary extensions to the openSMILE core. 
-       Expert technical support is also available to help you get started and integrate 
-       openSMILE in your developments quickly. Contact us today to receive your customized 
-       offer and talk about your possibilities!
-
 # Research and academic use license
 
         [Package] version 1.x
@@ -204,6 +195,15 @@ Repo for quick access to copy/paste info of licenses into code base.
     3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    
+# Service statement
+
+       For commercial use, we provide individualized, flexible commercial licensing options 
+       for any project size and budget. We also offer ready-to-use speech analysis services 
+       and software products based on our proprietary extensions to this software. 
+       Expert technical support is also available to help you get started and integrate 
+       our software in your development cycle quickly. Contact us today @ js@neurolex.co to receive 
+       your customized offer and talk about your possibilities!
 
 # references
 * [Research and academic use license](https://www.audeering.com/research-and-open-source/files/openSMILE-open-source-license.txt)

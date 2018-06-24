@@ -1,7 +1,7 @@
 # license_info
 Repo for quick access to copy/paste info of licenses into code base.
 
-It's separated into 3 sections: commercial licesnes, research licenses 
+It's separated into 3 sections: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). In this way, we can paste such licenses as .txt files inside of all distributions of software and make sure the software is released under the appropriate license. 
 
 # Commercial licenses 
 

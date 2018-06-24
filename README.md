@@ -17,7 +17,7 @@ Repo for quick access to copy/paste info of licenses into code base.
 
 ## Research and academic use license
 
-### Option 1: Like Audeering license 
+### Custom research license 
 
         [Package] version 1.x
           - To build and optimize machine learning models -
@@ -172,7 +172,7 @@ Repo for quick access to copy/paste info of licenses into code base.
        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
        
-### Option 3: Creative Commons License 
+### Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported
 
         You are free to:
         

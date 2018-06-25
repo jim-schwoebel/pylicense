@@ -21,17 +21,27 @@ except:
     os.mkdir(curdir+'/licenses')
     os.chdir(curdir+'/licenses')
 
-default_org=input('what is the default organization? (e.g.NeuroLex Laboratories, Inc.)')
-default_shortname=input('what is the default organization shortname? (e.g. NeuroLex)')
-default_location=input("what is the organization's primary location? (e.g. Seattle, WA'")
-default_website=input("what is the organization's website? (e.g. https://neurolex.ai)'")
-default_country=input("what is your default country? (leave blank for the United States of America)")
+default_org=input('what is the default organization? (leave blank for NeuroLex Laboratories, Inc.) ')
+if default_org in ['', ' ']:
+    default_org='NeuroLex Laboratories, Inc.'
+default_shortname=input('what is the default organization shortname? (leave blank for NeuroLex) ')
+if default_shortname in ['', ' ']:
+    default_shortname='NeuroLex'
+default_location=input("what is the organization's primary location? (leave blank for Seattle, WA' ")
+if default_location in ['', ' ']:
+    default_location=Seattle, WA
+default_website=input("what is the organization's website? (leave blank for https://neurolex.ai)' ")
+if default_website in ['', ' ']:
+    default_website='https://neurolex.ai'
+default_country=input("what is your default country? (leave blank for the United States of America) ")
 if default_country in [""," "]:
     default_country='the United States of America'
-default_legal_location=input('what state and country do you prefer to resolve legal disputes? Leave blank for Delaware (United States of America).')
+default_legal_location=input('what state and country do you prefer to resolve legal disputes? (Leave blank for Delaware, United States of America). ')
 if default_legal_location in [""," "]:
-    default_legal_location = 'Delaware (United States of America)'
-default_email=input('what contact email would you would like to provide?')
+    default_legal_location = 'Delaware, United States of America'
+default_email=input('what contact email would you would like to provide? (leave blank for develop@neurolex.ai)')
+if default_email in ['', ' ']:
+    defalut_email='develop@neurolex.ai'
 
 data={
     'default_org':default_org,

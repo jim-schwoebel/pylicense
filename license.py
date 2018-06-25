@@ -302,10 +302,11 @@ if date in [' ','']:
     date=str(datetime.datetime.now())[0:10]
 
 ## Now generate licenses based on some supplemental information
-ltext=open(rname+'_license.txt','w')
+filename=rname+'_license.txt'
+ltext=open(filename,'w')
 
 if lcategory in ['c','commercial']:
-    print('generating default commercial license text')
+    print('generating commercial license')
     ltype='trade secret'
     ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
     ltext.write(trade_secret(organization, author_email, date))
@@ -313,19 +314,20 @@ if lcategory in ['c','commercial']:
 
     
 elif lcategory in ['r','research']:
-    print('generating default research license text')
+    print('generating research license')
     ltype='%s research license'%(default_shortname)
     ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
     ltext.write(research_license(default_shortname, organization, default_country, default_legal_location, default_email))
     ltext.write(service_statement(default_email))
 
 elif lcategory in ['o','opensource','open source']:
-    print('generating default research license text')
+    print('generating opensource license')
     ltype='Apache 2.0 license'
     ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
     ltext.write(apache_license(date, default_org))
     ltext.write(service_statement(default_email))
     
 ltext.close()
-    
+# open file when it is finished automatically 
+os.system('open %s'%(filename))
     

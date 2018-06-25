@@ -27,7 +27,7 @@ You will then be asked some basic information
         what is the date of publication (e.g. July 2018)? (leave blank for current date) 
         generating default commercial license text
         
-You then output a .txt file with the appropriate license terms (output to license.txt). You can now put this into your repository to make sure it has the appropriate license terms:
+You then output a .txt file with the appropriate license terms (output to license.txt). You can now put this file into your repository to ensure compliance with your license.
 
         ================================================ 
                   NLX-MODEL REPOSITORY                     

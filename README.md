@@ -4,14 +4,13 @@ Repo for quick access to copy/paste info of licenses into code base.
 It's separated into 3 sections: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). In this way, we can paste such licenses as .txt files inside of all distributions of software and make sure the software is released under the appropriate license. 
 
 To make a license, run this in the terminal:
-
+        
+        cd ~
+        git clone 
+        cd make_licenses
         python3 license.py
-        --> what type of license? (commercial, research, opensource)
-        --> name of repository
-        --> link to repository
-        --> author name 
-        --> date of publication (current) 
-        ...
+
+You will then be asked some basic information 
 
 # Commercial licenses 
 

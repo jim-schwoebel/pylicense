@@ -71,6 +71,13 @@ You then output a .txt file with the appropriate license terms (output to licens
 
         If you would like to work with us let us know @ js@neurolex.co. 
 
+## Changing defaults 
+
+You can easily change default settings at the top of the license.py file. Look for the IMPORT STATEMENTS section and modify these to your liking:
+
+
+Now the script will work for your individual use case. 
+
 ## What licenses are supported 
 
 Currently, we support these licenses with the code base as a default.

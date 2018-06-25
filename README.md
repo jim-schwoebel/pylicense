@@ -8,7 +8,7 @@ It's separated into 3 sections: commercial licenses (no redistribution at all), 
 To make a license, run this in the terminal:
         
         cd ~
-        git clone 
+        git clone git@github.com:jim-schwoebel/make_licenses.git
         cd make_licenses
         python3 license.py
 

@@ -53,7 +53,7 @@ researchers, enterprises, and/or independent developers.
 If you would like to work with us let us know @ develop@neurolex.ai. 
 
 ================================================ 
-            SET_DEFAULTS.PY             
+        SET_DEFAULTS.PY SCRIPT      
 ================================================ 
 
 This script takes in input from a user to generate the default .json file for generating

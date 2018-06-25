@@ -115,7 +115,7 @@ This information will now work on all future executions of the license.py file.
 
 ## What licenses are supported 
 
-Currently, we support these licenses with the code base as a default.
+Currently, we support these licenses with the code base as a default. We plan on updating the library to include more licenses into the future. If you have any recommendations to add, let us know!  
 
 ### Commercial licenses 
 * [Trade secret]()

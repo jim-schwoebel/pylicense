@@ -1,6 +1,6 @@
 # make_licenses
 
-This repo is dedicated to generating licenses automatically with python. 
+This repo is dedicated to generate software licenses automatically with python. 
 
 ![](https://media.giphy.com/media/MbHWZv6FFWDnO/giphy.gif)
 

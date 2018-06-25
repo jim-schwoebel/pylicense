@@ -218,6 +218,33 @@ def research_license(default_shortname, organization, default_country,default_le
 
     return text
 
+def cc_research():
+    
+    one="You are free to: \n\n"
+    two="* Share — copy and redistribute the material in any medium or format \n\n"
+    three="The licensor cannot revoke these freedoms as long as you follow the license terms.\n\n"
+    four="Under the following terms: \n\n"
+    five="* Attribution — You must give appropriate credit, provide a link to the license, and \n"
+    six="indicate if changes were made. You may do so in any reasonable manner, \n"
+    seven="but not in any way that suggests the licensor endorses you or your use. \n\n"
+    eight="* NonCommercial — You may not use the material for commercial purposes.\n\n"
+    nine="* NoDerivatives — If you remix, transform, or build upon the material, you \n"
+    ten="may not distribute the modified material.\n\n"
+    eleven="No additional restrictions — You may not apply legal terms or technological measures \n"
+    twelve="that legally restrict others from doing anything the license permits. \n\n"
+    thirteen='Notices: \n\n'
+    fourteen='You do not have to comply with the license for elements of the material \n' 
+    fifteen='in the public domain or where your use is permitted by an applicable exception or limitation. \n\n'
+    sixteen='No warranties are given. The license may not give you all of the permissions \n' 
+    seventeen='necessary for your intended use. For example, other rights such as publicity, \n'
+    eighteen='privacy, or moral rights may limit how you use the material. \n\n'
+    nineteen='This is a human-readable summary of (and not a substitute for) the license. \n'
+    twenty='The license can be read here (https://creativecommons.org/licenses/by-nc-nd/3.0/legalcode) \n'
+
+    text=one+two+three+four+five+six+seven+eight+nine+ten+eleven+twelve+thirteen+fourteen+fifteen+sixteen+seventeen+eighteen+nineteen+twenty
+
+    return text 
+
 def apache_license(date, default_org):
     # this is for code released under the Apache 2.0 license
     year=date[0:4]
@@ -235,6 +262,59 @@ def apache_license(date, default_org):
     text=one+two+three+four+five+six+seven+eight+nine+ten
     
     return text
+
+def mit_license(date, default_org):
+
+    year=date[0:4]
+    one="Copyright %s %s \n\n"%(year, default_org)
+    two="Permission is hereby granted, free of charge, to any person obtaining a copy \n"
+    three='of this software and associated documentation files (the "Software"), to deal \n'
+    four="in the Software without restriction, including without limitation the rights \n"
+    five="to use, copy, modify, merge, publish, distribute, sublicense, and/or sell \n"
+    six="copies of the Software, and to permit persons to whom the Software is furnished \n"
+    seven="to do so, subject to the following conditions:\n\n"
+    eight="The above copyright notice and this permission notice shall be included in all \n"
+    nine="copies or substantial portions of the Software.\n\n"
+    ten='THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\n'
+    eleven="INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \n"
+    twelve="PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT \n"
+    thirteen="HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN \n"
+    fourteen="ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION \n"
+    fifteen="WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. \n"
+
+    text=one+two+three+four+five+six+seven+eight+nine+ten+eleven+twelve+thirteen+fourteen+fifteen
+
+    return text 
+
+def bsd3_license(date, default_org):
+
+    year=date[0:-4]
+    one="Copyright %s %s \n\n"%(year, default_org)
+    two='Redistribution and use in source and binary forms, with or without modification,\n'
+    three='are permitted provided that the following conditions are met: \n\n'
+    four='1. Redistributions of source code must retain the above copyright notice, this \n'
+    five='list of conditions and the following disclaimer.\n\n'
+    six='2. Redistributions in binary form must reproduce the above copyright notice, this \n'
+    seven='list of conditions and the following disclaimer in the documentation and/or \n'
+    eight='other materials provided with the distribution.\n\n'
+    nine='3. Neither the name of the copyright holder nor the names of its contributors \n'
+    ten='may be used to endorse or promote products derived from this software without \n'
+    eleven='specific prior written permission.\n\n'
+    twelve='THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" \n'
+    thirteen='AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, \n'
+    fourteen='THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR \n'
+    fifteen='PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR \n'
+    sixteen='CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, \n'
+    seventeen='EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, \n'
+    eighteen='PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; \n'
+    nineteen='OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, \n'
+    twenty='WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \n'
+    twentyone='OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, \n'
+    twentytwo='EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n'
+
+    text=one+two+three+four+five+six+seven+eight+nine+ten+eleven+twelve+thirteen+fourteen+fifteen+sixteen+seventeen+eighteen+nineteen+twenty+twentyone+twentytwo
+
+    return text 
 
 def service_statement(email):
     
@@ -314,19 +394,49 @@ if lcategory in ['c','commercial']:
 
     
 elif lcategory in ['r','research']:
-    print('generating research license')
-    ltype='%s research license'%(default_shortname)
-    ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
-    ltext.write(research_license(default_shortname, organization, default_country, default_legal_location, default_email))
-    ltext.write(service_statement(default_email))
+    ltype=input('what type of research license would you like? Options are %s and cc. (leave blank to default to %s)'%(default_shortname, default_shortname)).lower()
+    while ltype not in ['', ' ', default_shortname.lower(), 'cc']:
+        ltype=input('what type of research license would you like? Options are %s and cc. (leave blank to default to %s)'%(default_shortname, default_shortname)).lower()
+    if ltype in ['', ' ']:
+        ltype = default_shortname.lower()
+    if ltype == default_shortname.lower():
+        print('generating %s research license'%(default_shortname))
+        ltype='%s research license'%(default_shortname)
+        ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
+        ltext.write(research_license(default_shortname, organization, default_country, default_legal_location, default_email))
+        ltext.write(service_statement(default_email))
+    elif ltype == 'cc':
+        print('generating cc license...')
+        ltype = 'Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)'
+        ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
+        ltext.write(cc_research())
+        ltext.write(service_statement(default_email))
 
 elif lcategory in ['o','opensource','open source']:
-    print('generating opensource license')
-    ltype='Apache 2.0 license'
-    ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
-    ltext.write(apache_license(date, default_org))
-    ltext.write(service_statement(default_email))
-    
+    ltype=input('what type of opensource license would you like? Options are apache, mit, or 3bsd. (leave blank to default to apache 2.0 license)').lower()
+    while ltype not in ['', ' ', 'apache', 'mit', '3bsd']:
+        ltype=input('what type of opensource license would you like? Options are apache, mit, or 3bsd. (leave blank to default to apache 2.0 license)').lower()
+    if ltype in ['',' ']:
+        ltype='apache'
+    if ltype == 'apache':
+        print('generating apache 2.0 license')
+        ltype='Apache 2.0 license'
+        ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
+        ltext.write(apache_license(date, default_org))
+        ltext.write(service_statement(default_email))
+    elif ltype == 'mit':
+        print('generating mit license')
+        ltype='MIT License'
+        ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
+        ltext.write(mit_license(date, default_org))
+        ltext.write(service_statement(default_email))
+    elif ltype == '3bsd':
+        print('generating 3 clause BSD license')
+        ltype='3-Clause BSD License'
+        ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
+        ltext.write(bsd3_license(date, default_org))
+        ltext.write(service_statement(default_email)) 
+
 ltext.close()
 # open file when it is finished automatically 
 os.system('open %s'%(filename))

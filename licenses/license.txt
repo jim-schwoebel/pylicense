@@ -1,0 +1,41 @@
+================================================ 
+          NLX-MODEL REPOSITORY                     
+================================================ 
+
+repository name: nlx-model 
+repository link: https://github.com/NeuroLexDiagnostics/nlx-model 
+description: this package builds and optimizes machine learning ffor voice, text, image, and video data. 
+license category: commercial 
+license: trade secret 
+organization name: NeuroLex Laboratories, Inc. 
+location: Seattle, WA
+website: https://neurolex.ai 
+release date: 2018-06-25 
+
+This code (nlx-model) is hereby released under a trade secret license. 
+
+For more information, check out the license terms below. 
+
+================================================ 
+                LICENSE TERMS                      
+================================================ 
+
+Copyright (C) NeuroLex Laboratories, Inc. - All Rights Reserved 
+* Unauthorized copying of this file, via any medium is strictly prohibited 
+* Proprietary and confidential 
+* Written by Jim Schwoebel <js@neurolex.co>, 2018-06-25
+
+================================================ 
+                SERVICE STATEMENT                    
+================================================ 
+
+If you are using the code written for a larger project, we are 
+happy to consult with you and help you with deployment. Our team 
+has >10 world experts in kafka distributed architectures, microservices 
+built on top of Node.JS / python / docker, and applying machine learning to 
+model speech and text data. 
+
+We have helped a wide variety of enterprises - small businesses, 
+researchers, enterprises, and/or independent developers. 
+
+If you would like to work with us let us know @ js@neurolex.co. 

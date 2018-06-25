@@ -19,36 +19,40 @@ To make a license, run this in the terminal:
 
 You will then be asked some basic information:
 
-        what type of license? (commercial, research, opensource)? commercial
-        what is the name of the repository? nlx-model
+        what type of license? (commercial, research, opensource)? opensource
+        what is the name of the repository? testrepo
         what is the version? (can leave blank for 1.0)
-        what does this repo do? this package builds and optimizes machine learning for voice, text, image, and video data.
-        what is the link to this repository? https://github.com/NeuroLexDiagnostics/nlx-model
-        what is the author(s) name(s)? Jim Schwoebel
-        what is the contact author email? js@neurolex.co
+        what does this repo do? this is a test
+        what is the link to this repository? 
+        what is the author(s) name(s)? (blank for Jim Schwoebel) 
+        what is the contact author email? (blank for js@neurolex.co) 
         what is the organization name? (leave blank for NeuroLex Laboratories, Inc.) 
         what is the location of the organization? (blank for Seattle, WA)
         what is the website for the organization? (blank for https://neurolex.ai)
         what is the date of publication (e.g. July 2018)? (leave blank for current date) 
-        generating default commercial license text
-        
+        what type of opensource license would you like? Options are apache, mit, or 3bsd. (leave blank to default to apache 2.0 license)apache
+        generating apache 2.0 license
+
 You then output a .txt file with the appropriate license terms (output to name_license.txt in the ../licenses folder). 
 
         ================================================ 
-                  NLX-MODEL REPOSITORY                     
+                  TESTREPO REPOSITORY                     
         ================================================ 
 
-        repository name: nlx-model 
-        repository link: https://github.com/NeuroLexDiagnostics/nlx-model 
-        description: this package builds and optimizes machine learning ffor voice, text, image, and video data. 
-        license category: commercial 
-        license: trade secret 
+        repository name: testrepo 
+        repository version: 1.0 
+        repository link: n/a 
+        author: Jim Schwoebel 
+        author contact: js@neurolex.co 
+        description: this is a test 
+        license category: opensource 
+        license: Apache 2.0 license 
         organization name: NeuroLex Laboratories, Inc. 
-        location: Seattle, WA
+        location: Seattle, WA 
         website: https://neurolex.ai 
         release date: 2018-06-25 
 
-        This code (nlx-model) is hereby released under a trade secret license. 
+        This code (testrepo) is hereby released under a Apache 2.0 license license. 
 
         For more information, check out the license terms below. 
 
@@ -56,10 +60,18 @@ You then output a .txt file with the appropriate license terms (output to name_l
                         LICENSE TERMS                      
         ================================================ 
 
-        Copyright (C) NeuroLex Laboratories, Inc. - All Rights Reserved 
-        * Unauthorized copying of this file, via any medium is strictly prohibited 
-        * Proprietary and confidential 
-        * Written by Jim Schwoebel <js@neurolex.co>, 2018-06-25
+        Copyright 2018 NeuroLex Laboratories, Inc. 
+        Licensed under the Apache License, Version 2.0 (the "License"); 
+        you may not use this file except in compliance with the License. 
+        You may obtain a copy of the License at 
+
+             http://www.apache.org/licenses/LICENSE-2.0 
+
+        Unless required by applicable law or agreed to in writing, software 
+        distributed under the License is distributed on an "AS IS" BASIS, 
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+        See the License for the specific language governing permissions and 
+        limitations under the License. 
 
         ================================================ 
                         SERVICE STATEMENT                    
@@ -74,7 +86,7 @@ You then output a .txt file with the appropriate license terms (output to name_l
         We have helped a wide variety of enterprises - small businesses, 
         researchers, enterprises, and/or independent developers. 
 
-        If you would like to work with us let us know @ js@neurolex.co. 
+        If you would like to work with us let us know @ develop@neurolex.ai. 
 
 ## Changing defaults 
 

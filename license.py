@@ -25,6 +25,8 @@ import os, datetime
 
 # set current directory 
 curdir=os.getcwd()+'/licenses'
+os.chdir(curdir)
+
 # set defaults (change this for your company)
 default_org='NeuroLex Laboratories, Inc.'
 default_shortname='NeuroLex'

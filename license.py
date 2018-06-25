@@ -23,9 +23,15 @@ adding a license.txt document to each repo that you make.
 
 import os, datetime, json
 
-# set current directory 
+# set current directory (if for some reason deleted, make this directory)
 curdir=os.getcwd()
-os.chdir(curdir+'/licenses')
+
+try:
+    os.chdir(curdir+'/licenses')
+except:
+    os.mkdir(curdir+'/licenses')
+    os.chdir(curdir+'/licenses')
+
 # set defaults (loaded after you run set_defaults.py)
 if 'defaults.json' not in os.listdir():
     os.chdir(curdir)

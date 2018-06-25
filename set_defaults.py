@@ -13,7 +13,13 @@ This makes it easier to set defaults into the license.py code.
 '''
 import json, os
 
-os.chdir(os.getcwd()+'/licenses')
+curdir=os.getcwd()
+
+try:
+    os.chdir(curdir+'/licenses')
+except:
+    os.mkdir(curdir+'/licenses')
+    os.chdir(curdir+'/licenses')
 
 default_org=input('what is the default organization? (e.g.NeuroLex Laboratories, Inc.)')
 default_shortname=input('what is the default organization shortname? (e.g. NeuroLex)')

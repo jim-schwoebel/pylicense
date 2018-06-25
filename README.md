@@ -8,8 +8,8 @@ It's separated into 3 sections: commercial licenses (no redistribution at all), 
 To make a license, run this in the terminal:
         
         cd ~
-        git clone git@github.com:jim-schwoebel/make_licenses.git
-        cd make_licenses
+        git clone git@github.com:jim-schwoebel/pylicense.git
+        cd pylicense
         python3 license.py
 
 You will then be asked some basic information:
@@ -76,12 +76,22 @@ You then output a .txt file with the appropriate license terms (output to licens
 You can easily change default settings. If you'd like to do this, type this into the terminal:
 
         cd ~
-        cd make_licenses
+        cd pylicense
         python3 set_defaults.py
 
 You then will be asked a series of questions to set defaults to change the defaults.json file in the /licenses folder. 
 
-        
+        what is the default organization? (leave blank for NeuroLex Laboratories, Inc.) 
+        what is the default organization shortname? (leave blank for NeuroLex) 
+        what is the organization's primary location? (leave blank for Seattle, WA) 
+        what is the organization's website? (leave blank for https://neurolex.ai) 
+        what is your default country? (leave blank for the United States of America) 
+        what state and country do you prefer to resolve legal disputes? (Leave blank for Delaware, United States of America) 
+        what is your name? (leave blank for Jim Schwoebel)
+        what is your email address? (leave blank for js@neurolex.co) 
+        what contact organization email would you would like to provide? (leave blank for develop@neurolex.ai) 
+        made defaults.json
+        {'default_org': 'NeuroLex Laboratories, Inc.', 'default_shortname': 'NeuroLex', 'default_location': 'Seattle, WA', 'default_website': 'https://neurolex.ai', 'default_country': 'the United States of America', 'default_legal_location': 'Delaware, United States of America', 'default_author': 'Jim Schwoebel', 'default_author_email': 'js@neurolex.co', 'default_email': 'develop@neurolex.ai'}
 
 This information will now work on all future executions of the license.py file. 
 

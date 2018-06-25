@@ -73,10 +73,17 @@ You then output a .txt file with the appropriate license terms (output to licens
 
 ## Changing defaults 
 
-You can easily change default settings at the top of the license.py file. Look for the IMPORT STATEMENTS section and modify these to your liking:
+You can easily change default settings. If you'd like to do this, type this into the terminal:
 
+        cd ~
+        cd make_licenses
+        python3 set_defaults.py
 
-Now the script will work for your individual use case. 
+You then will be asked a series of questions to set defaults to change the defaults.json file in the /licenses folder. 
+
+        
+
+This information will now work on all future executions of the license.py file. 
 
 ## What licenses are supported 
 

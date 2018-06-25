@@ -12,7 +12,7 @@ To make a license, run this in the terminal:
         cd make_licenses
         python3 license.py
 
-You will then be asked some basic information 
+You will then be asked some basic information:
 
         what type of license? (commercial, research, opensource)? commercial
         what is the name of the repository? nlx-model

@@ -29,7 +29,7 @@ if default_shortname in ['', ' ']:
     default_shortname='NeuroLex'
 default_location=input("what is the organization's primary location? (leave blank for Seattle, WA) ")
 if default_location in ['', ' ']:
-    default_location=Seattle, WA
+    default_location='Seattle, WA'
 default_website=input("what is the organization's website? (leave blank for https://neurolex.ai) ")
 if default_website in ['', ' ']:
     default_website='https://neurolex.ai'
@@ -39,9 +39,15 @@ if default_country in [""," "]:
 default_legal_location=input('what state and country do you prefer to resolve legal disputes? (Leave blank for Delaware, United States of America) ')
 if default_legal_location in [""," "]:
     default_legal_location = 'Delaware, United States of America'
-default_email=input('what contact email would you would like to provide? (leave blank for develop@neurolex.ai) ')
+default_author=input('what is your name? (leave blank for Jim Schwoebel)')
+if default_author in ['',' ']:
+    default_author='Jim Schwoebel'
+default_author_email=input('what is your email address? (leave blank for js@neurolex.co) ')
+if default_author_email in ['', ' ']:
+    default_author_email='js@neurolex.co'
+default_email=input('what contact organization email would you would like to provide? (leave blank for develop@neurolex.ai) ')
 if default_email in ['', ' ']:
-    defalut_email='develop@neurolex.ai'
+    default_email='develop@neurolex.ai'
 
 data={
     'default_org':default_org,
@@ -50,9 +56,14 @@ data={
     'default_website':default_website,
     'default_country':default_country,
     'default_legal_location':default_legal_location,
+    'default_author':default_author,
+    'default_author_email':default_author_email,
     'default_email':default_email
     }
 
 jsonfile=open('defaults.json','w')
 json.dump(data,jsonfile)
 jsonfile.close()
+
+print('made defaults.json')
+print(data)

@@ -45,34 +45,38 @@ default_location=data['default_location']
 default_website=data['default_website']
 default_country=data['default_country']
 default_legal_location=data['default_legal_location']
+default_author=data['default_author']
+default_author_email=data['default_author_email']
 default_email=data['default_email']
 
 ####################################################################
 ##                      HELPER FUNCTIONS                          ##
 ####################################################################
 
-def header(rname, rversion, description, lcategory, ltype, rlink, author, organization, location, website, date):
+def header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date):
     one='================================================ \n'
     two='          %s REPOSITORY                     \n'%(rname.upper())
     three='================================================ \n'
     space='\n'
     four='repository name: %s \n'%(rname)
     five='repository version: %s \n'%(rversion)
-    five='repository link: %s \n'%(rlink)
-    six='description: %s \n'%(description)
-    seven='license category: %s \n'%(lcategory)
-    eight='license: %s \n'%(ltype)
-    nine='organization name: %s \n'%(organization)
-    ten='location: %s'%(location)
-    eleven='website: %s \n'%(website)
-    twelve='release date: %s \n\n'%(date)
-    thirteen='This code (%s) is hereby released under a %s license. \n\n'%(rname, ltype)
-    fourteen= 'For more information, check out the license terms below. \n\n'
-    fifteen='================================================ \n'
-    sixteen='                LICENSE TERMS                      \n'
-    seventeen='================================================ \n\n'
+    six='repository link: %s \n'%(rlink)
+    seven='author: %s \n'%(author)
+    eight='author contact: %s \n'%(author_email)
+    nine='description: %s \n'%(description)
+    ten='license category: %s \n'%(lcategory)
+    eleven='license: %s \n'%(ltype)
+    twelve='organization name: %s \n'%(organization)
+    thirteen='location: %s \n'%(location)
+    fourteen='website: %s \n'%(website)
+    fifteen='release date: %s \n\n'%(date)
+    sixteen='This code (%s) is hereby released under a %s license. \n\n'%(rname, ltype)
+    seventeen= 'For more information, check out the license terms below. \n\n'
+    eighteen='================================================ \n'
+    nineteen='                LICENSE TERMS                      \n'
+    twenty='================================================ \n\n'
     
-    return one+two+three+space+four+five+six+seven+eight+nine+ten+space+eleven+twelve+thirteen+fourteen+fifteen+sixteen+seventeen
+    return one+two+three+space+four+five+six+seven+eight+nine+ten+eleven+twelve+thirteen+fourteen+fifteen+sixteen+seventeen+eighteen+nineteen+twenty
 
 def trade_secret(organization, email, date):
     ## this is for generating text indicating the confidentiality of a code base as a trade secret 
@@ -244,7 +248,7 @@ def service_statement(email):
     eight='model speech and text data. \n\n'
     nine='We have helped a wide variety of enterprises - small businesses, \n' 
     ten='researchers, enterprises, and/or independent developers. \n\n'
-    eleven="If you would like to work with us let us know @ %s. \n"%(email)
+    eleven="If you would like to work with us let us know @ %s. \n"%(default_email)
     twelve="We're happy to help - even if its an opensource project. :) "
     
     return one+two+three+four+five+six+seven+eight+nine+ten+eleven
@@ -273,11 +277,17 @@ rversion = input('what is the version? (can leave blank for 1.0)')
 if rversion in ['', ' ']:
     rversion='1.0'
 description = input('what does this repo do? ')
+if description in ['', ' ']:
+    description='n/a'
 rlink= input('what is the link to this repository? ' )
-author = input('what is the author(s) name(s)? ')
-email = input('what is the contact author email? ')
-if email in ['',' ']:
-    email=default_email
+if rlink in ['', ' ']:
+    rlink='n/a'
+author = input('what is the author(s) name(s)? (blank for %s) '%(default_author))
+if author in ['', ' ']:
+    author=default_author
+author_email = input('what is the contact author email? (blank for %s) '%(default_author_email))
+if author_email in ['',' ']:
+    author_email=default_author_email
 organization = input('what is the organization name? (leave blank for %s) '%(default_org))
 if organization in [' ','']:
     organization=default_org
@@ -292,29 +302,29 @@ if date in [' ','']:
     date=str(datetime.datetime.now())[0:10]
 
 ## Now generate licenses based on some supplemental information
-ltext=open('license.txt','w')
+ltext=open(rname+'_license.txt','w')
 
 if lcategory in ['c','commercial']:
     print('generating default commercial license text')
     ltype='trade secret'
-    ltext.write(header(rname, rversion, description, lcategory, ltype, rlink, author, organization, location, website, date))
-    ltext.write(trade_secret(organization, email, date))
-    ltext.write(service_statement(email))
+    ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
+    ltext.write(trade_secret(organization, author_email, date))
+    ltext.write(service_statement(default_email))
 
     
 elif lcategory in ['r','research']:
     print('generating default research license text')
     ltype='%s research license'%(default_shortname)
-    ltext.write(header(rname, rversion, description, lcategory, ltype, rlink, author, organization, location, website, date))
-    ltext.write(research_license(default_shortname, organization, default_country,default_legal_location, email))
-    ltext.write(service_statement(email))
+    ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
+    ltext.write(research_license(default_shortname, organization, default_country, default_legal_location, default_email))
+    ltext.write(service_statement(default_email))
 
 elif lcategory in ['o','opensource','open source']:
     print('generating default research license text')
     ltype='Apache 2.0 license'
-    ltext.write(header(rname, rversion, description, lcategory, ltype, rlink, author, organization, location, website, date))
+    ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
     ltext.write(apache_license(date, default_org))
-    ltext.write(service_statement(email))
+    ltext.write(service_statement(default_email))
     
 ltext.close()
     

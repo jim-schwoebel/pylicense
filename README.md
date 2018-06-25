@@ -1,10 +1,11 @@
 # PyLicense
 
-This repo is dedicated to generate software licenses automatically with python. 
+This repo is dedicated to generate software licenses automatically with python as .txt files. 
 
 ![](https://media.giphy.com/media/MbHWZv6FFWDnO/giphy.gif)
 
-It's separated into 3 sections: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). In this way, you can paste such licenses as .txt files inside of all distributions of software and make sure the software is properly documented. 
+This script can create 3 classes of software licenses: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). In this way, you can paste such
+licenses as .txt files inside of all distributions of software and make sure the software is released under the appropriate license.
 
 Happy license-making :) 
 

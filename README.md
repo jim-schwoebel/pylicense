@@ -75,34 +75,31 @@ You then output a .txt file with the appropriate license terms (output to licens
 
 Currently, we support these licenses with the code base as a default.
 
-# Commercial licenses 
-
+### Commercial licenses 
 * [Trade secret]()
 
-# Research licenses 
-
+### Research licenses 
 * [Research and academic use license](https://www.audeering.com/research-and-open-source/files/openSMILE-open-source-license.txt)
 
-# Open-source licenses 
-
+### Open-source licenses 
 * [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0)
 
 
-# FUTURE WORK 
+## FUTURE WORK 
 
 Add in these licenses into the code. 
 
-## Commercial license
+### Commercial license
 * [TBA]()
 
-## Research licenses
+### Research licenses
 * [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported](https://creativecommons.org/licenses/by-nc-nd/3.0/)
 
-## Opensource licenses 
+### Opensource licenses 
 * [MIT License]()
 * [3 Clause BSD license]()
 
-# references
+## references
 * [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 * [MIT License](https://opensource.org/licenses/MIT)
 * [Other opensource licenses](https://choosealicense.com/licenses/)

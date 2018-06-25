@@ -1,7 +1,12 @@
 # make_licenses
+
 Repo for quick access to copy/paste info of licenses into code base.
 
-It's separated into 3 sections: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). In this way, we can paste such licenses as .txt files inside of all distributions of software and make sure the software is released under the appropriate license. 
+![](https://media.giphy.com/media/UyPpKZScnl7na/giphy.gif)
+
+It's separated into 3 sections: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). In this way, you can paste such licenses as .txt files inside of all distributions of software and make sure the software is properly documented. 
+
+Happy license-making :) 
 
 ## Getting started 
 
@@ -27,7 +32,7 @@ You will then be asked some basic information:
         what is the date of publication (e.g. July 2018)? (leave blank for current date) 
         generating default commercial license text
         
-You then output a .txt file with the appropriate license terms (output to license.txt). You can now put this file into your repository to ensure compliance with your license.
+You then output a .txt file with the appropriate license terms (output to name_license.txt in the ../licenses folder). 
 
         ================================================ 
                   NLX-MODEL REPOSITORY                     

@@ -1,4 +1,4 @@
-# Pylicense
+# PyLicense
 
 This repo is dedicated to generate software licenses automatically with python. 
 

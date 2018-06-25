@@ -109,7 +109,7 @@ Currently, we support these licenses with the code base as a default.
 
 ### Research licenses 
 * [Research and academic use license](https://www.audeering.com/research-and-open-source/files/openSMILE-open-source-license.txt)
-* [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/3.0/)
+* [Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)](https://creativecommons.org/licenses/by-nc-nd/3.0/)
 
 ### Open-source licenses 
 * [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0)

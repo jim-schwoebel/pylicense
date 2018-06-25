@@ -84,8 +84,7 @@ Currently, we support these licenses with the code base as a default.
 ### Open-source licenses 
 * [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0)
 
-
-## FUTURE WORK 
+## Future work
 
 Add in these licenses into the code. 
 

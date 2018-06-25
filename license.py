@@ -1,19 +1,56 @@
 '''
-Script name: License.py
-Repo link: https://github.com/jim-schwoebel/license_info
-License: Apache 2.0 license
-Author: Jim Schwoebel
+================================================ 
+          PYLICENSE REPOSITORY                     
+================================================ 
 
-This repo is made to quickly generate licenses (in .txt) for code you write.
+repository name: PyLicense 
+repository version: 1.0 
+repository link: https://github.com/jim-schwoebel/pylicense 
+author: Jim Schwoebel 
+author contact: js@neurolex.co 
+description: makes software licenses automatically to better document code bases. 
+license category: opensource 
+license: Apache 2.0 license 
+organization name: NeuroLex Laboratories, Inc. 
+location: Seattle, WA 
+website: https://neurolex.ai 
+release date: 2018-06-25 
 
-It's separated into 3 sections: commercial licenses (no redistribution at all),
-research licenses (restrictions to not use code for commercial use), and
-open-source licenses (no restrictions). In this way, you can paste such
-licenses as .txt files inside of all distributions of software and make sure
-the software is released under the appropriate license.
+This code (PyLicense) is hereby released under a Apache 2.0 license license. 
 
-In this way, you can have a more standard process for documenting code by just
-adding a license.txt document to each repo that you make.
+For more information, check out the license terms below. 
+
+================================================ 
+                LICENSE TERMS                      
+================================================ 
+
+Copyright 2018 NeuroLex Laboratories, Inc. 
+Licensed under the Apache License, Version 2.0 (the "License"); 
+you may not use this file except in compliance with the License. 
+You may obtain a copy of the License at 
+
+     http://www.apache.org/licenses/LICENSE-2.0 
+
+Unless required by applicable law or agreed to in writing, software 
+distributed under the License is distributed on an "AS IS" BASIS, 
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+See the License for the specific language governing permissions and 
+limitations under the License. 
+
+================================================ 
+                SERVICE STATEMENT                    
+================================================ 
+
+If you are using the code written for a larger project, we are 
+happy to consult with you and help you with deployment. Our team 
+has >10 world experts in kafka distributed architectures, microservices 
+built on top of Node.JS / python / docker, and applying machine learning to 
+model speech and text data. 
+
+We have helped a wide variety of enterprises - small businesses, 
+researchers, enterprises, and/or independent developers. 
+
+If you would like to work with us let us know @ develop@neurolex.ai. 
 
 '''
 

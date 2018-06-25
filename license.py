@@ -394,9 +394,9 @@ if lcategory in ['c','commercial']:
 
     
 elif lcategory in ['r','research']:
-    ltype=input('what type of research license would you like? Options are %s and cc. (leave blank to default to %s)'%(default_shortname, default_shortname)).lower()
+    ltype=input('what type of research license would you like? Options are %s and cc. (leave blank to default to %s) '%(default_shortname, default_shortname)).lower()
     while ltype not in ['', ' ', default_shortname.lower(), 'cc']:
-        ltype=input('what type of research license would you like? Options are %s and cc. (leave blank to default to %s)'%(default_shortname, default_shortname)).lower()
+        ltype=input('what type of research license would you like? Options are %s and cc. (leave blank to default to %s) '%(default_shortname, default_shortname)).lower()
     if ltype in ['', ' ']:
         ltype = default_shortname.lower()
     if ltype == default_shortname.lower():
@@ -413,9 +413,9 @@ elif lcategory in ['r','research']:
         ltext.write(service_statement(default_email))
 
 elif lcategory in ['o','opensource','open source']:
-    ltype=input('what type of opensource license would you like? Options are apache, mit, or 3bsd. (leave blank to default to apache 2.0 license)').lower()
+    ltype=input('what type of opensource license would you like? Options are apache, mit, or 3bsd. (leave blank to default to apache 2.0 license) ').lower()
     while ltype not in ['', ' ', 'apache', 'mit', '3bsd']:
-        ltype=input('what type of opensource license would you like? Options are apache, mit, or 3bsd. (leave blank to default to apache 2.0 license)').lower()
+        ltype=input('what type of opensource license would you like? Options are apache, mit, or 3bsd. (leave blank to default to apache 2.0 license) ').lower()
     if ltype in ['',' ']:
         ltype='apache'
     if ltype == 'apache':

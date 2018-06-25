@@ -21,20 +21,25 @@ adding a license.txt document to each repo that you make.
 ##                    IMPORT STATEMENTS                           ##
 ####################################################################
 
-import os, datetime
+import os, datetime, json
 
 # set current directory 
-curdir=os.getcwd()+'/licenses'
-os.chdir(curdir)
+curdir=os.getcwd()
+os.chdir(curdir+'/licenses')
+# set defaults (loaded after you run set_defaults.py)
+if 'defaults.json' not in os.listdir():
+    os.chdir(curdir)
+    os.system('python3 set_defaults.py')
+    os.chdir(curdir+'/licenses')
 
-# set defaults (change this for your company)
-default_org='NeuroLex Laboratories, Inc.'
-default_shortname='NeuroLex'
-default_location='Seattle, WA'
-default_website='https://neurolex.ai'
-default_country='the United States of America'
-default_legal_location='Delaware (United States of America)'
-default_email='develop@neurolex.ai'
+data=json.load(open('defaults.json'))
+default_org=data['default_org']
+default_shortname=data['default_shortname']
+default_location=data['default_location']
+default_website=data['default_website']
+default_country=data['default_country']
+default_legal_location=data['default_legal_location']
+default_email=data['default_email']
 
 ####################################################################
 ##                      HELPER FUNCTIONS                          ##

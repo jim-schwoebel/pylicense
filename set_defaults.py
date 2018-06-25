@@ -11,7 +11,9 @@ the future for your organization.
 
 This makes it easier to set defaults into the license.py code.
 '''
-import json
+import json, os
+
+os.chdir(os.getcwd()+'/licenses')
 
 default_org=input('what is the default organization? (e.g.NeuroLex Laboratories, Inc.)')
 default_shortname=input('what is the default organization shortname? (e.g. NeuroLex)')
@@ -35,6 +37,6 @@ data={
     'default_email':default_email
     }
 
-jsonfile=open('default.json','w')
+jsonfile=open('defaults.json','w')
 json.dump(data,jsonfile)
 jsonfile.close()

@@ -52,6 +52,14 @@ researchers, enterprises, and/or independent developers.
 
 If you would like to work with us let us know @ develop@neurolex.ai. 
 
+================================================ 
+                LICENSE.PY SCRIPT                    
+================================================ 
+
+This script is the main code of this repository. It takes in input 
+from a user and a database (defaults.json) and then outputs a .txt
+document with appropriate license documentation. 
+
 '''
 
 ####################################################################

@@ -2,7 +2,7 @@
 
 Repo for quick access to copy/paste info of licenses into code base.
 
-![](https://media.giphy.com/media/UyPpKZScnl7na/giphy.gif)
+![](https://giphy.com/gifs/MbHWZv6FFWDnO)
 
 It's separated into 3 sections: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). In this way, you can paste such licenses as .txt files inside of all distributions of software and make sure the software is properly documented. 
 

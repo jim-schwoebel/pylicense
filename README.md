@@ -114,7 +114,7 @@ You can easily change default settings. If you'd like to do this, type this into
 
 This information will now work on all future executions of the license.py file. 
 
-If you'd like to include a service statement, you can in this script through editing the service_statement.txt file. It will automatically open up if you decide you want to include a service statement. Please edit this to your needs, thinking about the spacing to document your code. 
+If you'd like to include a service statement, you can in this script through editing the service_statement.txt file in the ../licenses folder. Feel free to edit this to your needs while thinking about the spacing necessary to properly document your code. 
 
 ## What licenses are supported 
 

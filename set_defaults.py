@@ -63,7 +63,20 @@ the future for your organization.
 This makes it easier to set defaults into the license.py code.
 
 '''
-import json, os
+import os
+
+try:
+    import pyttsx3 
+except:
+    os.system('pip3 install pyttsx3')
+    import pyttsx3 
+
+import json
+
+def speak_text(text):
+    engine = pyttsx3.init()
+    engine.say(text)
+    engine.runAndWait()
 
 curdir=os.getcwd()
 
@@ -100,6 +113,15 @@ if default_author_email in ['', ' ']:
 default_email=input('what contact organization email would you would like to provide? (leave blank for develop@neurolex.ai) ')
 if default_email in ['', ' ']:
     default_email='develop@neurolex.ai'
+default_service_statement=input('would you like to include a service statement in your code? (yes or no)')
+while default_service_statement not in ['y','yes','n','no']:
+    default_service_statement=input('input not recognized. Would you like to include a service statement in your code? (yes or no)')
+if default_service_statement in ['yes', 'y']:
+    speak_text('please edit this service statement to your needs and then save it; it will be used in your code base')
+    os.system('open service_statement.txt')
+    default_service_statement=True;
+else:
+    default_service_statement=False;
 
 data={
     'default_org':default_org,
@@ -110,7 +132,8 @@ data={
     'default_legal_location':default_legal_location,
     'default_author':default_author,
     'default_author_email':default_author_email,
-    'default_email':default_email
+    'default_email':default_email,
+    'default_service_statement': default_service_statement,
     }
 
 jsonfile=open('defaults.json','w')

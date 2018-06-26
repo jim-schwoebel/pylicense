@@ -65,8 +65,21 @@ document with appropriate license documentation.
 ####################################################################
 ##                    IMPORT STATEMENTS                           ##
 ####################################################################
+import os
 
-import os, datetime, json
+try:
+    import pyttsx3 
+except:
+    os.system('pip3 install pyttsx3')
+    import pyttsx3 
+
+import datetime, json
+
+# quick function to speak text back to user if errors 
+def speak_text(text):
+    engine = pyttsx3.init()
+    engine.say(text)
+    engine.runAndWait()
 
 # set current directory (if for some reason deleted, make this directory)
 curdir=os.getcwd()
@@ -83,16 +96,25 @@ if 'defaults.json' not in os.listdir():
     os.system('python3 set_defaults.py')
     os.chdir(curdir+'/licenses')
 
-data=json.load(open('defaults.json'))
-default_org=data['default_org']
-default_shortname=data['default_shortname']
-default_location=data['default_location']
-default_website=data['default_website']
-default_country=data['default_country']
-default_legal_location=data['default_legal_location']
-default_author=data['default_author']
-default_author_email=data['default_author_email']
-default_email=data['default_email']
+try:
+    data=json.load(open('defaults.json'))
+    default_org=data['default_org']
+    default_shortname=data['default_shortname']
+    default_location=data['default_location']
+    default_website=data['default_website']
+    default_country=data['default_country']
+    default_legal_location=data['default_legal_location']
+    default_author=data['default_author']
+    default_author_email=data['default_author_email']
+    default_email=data['default_email']
+    default_service_statement=data['default_service_statement']
+except:
+    speak_text('defaults.json file is not formatted correctly. Please re-run the set_defaults.py script.')
+
+try:
+    service_statement_text=open('service_statement.txt').read()
+except: 
+    speak_text('please make the service_statement.txt exists in the /licenses folder before continuing.')
 
 ####################################################################
 ##                      HELPER FUNCTIONS                          ##
@@ -361,22 +383,14 @@ def bsd3_license(date, default_org):
 
     return text 
 
-def service_statement(email):
+def service_statement(service_statement):
     
     one='\n================================================ \n'
     two='                SERVICE STATEMENT                    \n'
     three='================================================ \n\n'
-    four='If you are using the code written for a larger project, we are \n'
-    five='happy to consult with you and help you with deployment. Our team \n'
-    six='has >10 world experts in kafka distributed architectures, microservices \n'
-    seven='built on top of Node.JS / python / docker, and applying machine learning to \n'
-    eight='model speech and text data. \n\n'
-    nine='We have helped a wide variety of enterprises - small businesses, \n' 
-    ten='researchers, enterprises, and/or independent developers. \n\n'
-    eleven="If you would like to work with us let us know @ %s. \n"%(default_email)
-    twelve="We're happy to help - even if its an opensource project. :) "
+    four=service_statement
     
-    return one+two+three+four+five+six+seven+eight+nine+ten+eleven
+    return one+two+three+four
 
 
 ####################################################################
@@ -435,8 +449,8 @@ if lcategory in ['c','commercial']:
     ltype='trade secret'
     ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
     ltext.write(trade_secret(organization, author_email, date))
-    ltext.write(service_statement(default_email))
-
+    if default_service_statement == True:
+        ltext.write(service_statement(service_statement_text))
     
 elif lcategory in ['r','research']:
     ltype=input('what type of research license would you like? Options are %s and cc. (leave blank to default to %s) '%(default_shortname, default_shortname)).lower()
@@ -449,13 +463,15 @@ elif lcategory in ['r','research']:
         ltype='%s research license'%(default_shortname)
         ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
         ltext.write(research_license(default_shortname, organization, default_country, default_legal_location, default_email))
-        ltext.write(service_statement(default_email))
+        if default_service_statement == True:
+            ltext.write(service_statement(service_statement_text))
     elif ltype == 'cc':
         print('generating cc license...')
         ltype = 'Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)'
         ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
         ltext.write(cc_research())
-        ltext.write(service_statement(default_email))
+        if default_service_statement == True:
+            ltext.write(service_statement(service_statement_text))
 
 elif lcategory in ['o','opensource','open source']:
     ltype=input('what type of opensource license would you like? Options are apache, mit, or 3bsd. (leave blank to default to apache 2.0 license) ').lower()
@@ -468,19 +484,22 @@ elif lcategory in ['o','opensource','open source']:
         ltype='Apache 2.0 license'
         ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
         ltext.write(apache_license(date, default_org))
-        ltext.write(service_statement(default_email))
+        if default_service_statement == True:
+            ltext.write(service_statement(service_statement_text))
     elif ltype == 'mit':
         print('generating mit license')
         ltype='MIT License'
         ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
         ltext.write(mit_license(date, default_org))
-        ltext.write(service_statement(default_email))
+        if default_service_statement == True:
+            ltext.write(service_statement(service_statement_text))
     elif ltype == '3bsd':
         print('generating 3 clause BSD license')
         ltype='3-Clause BSD License'
         ltext.write(header(author, author_email, rname, rversion, description, lcategory, ltype, rlink, organization, location, website, date))
         ltext.write(bsd3_license(date, default_org))
-        ltext.write(service_statement(default_email)) 
+        if default_service_statement == True:
+            ltext.write(service_statement(service_statement_text)) 
 
 ltext.close()
 # open file when it is finished automatically 

@@ -97,8 +97,7 @@ You can easily change default settings. If you'd like to do this, type this into
         cd pylicense
         python3 set_defaults.py
 
-You then will be asked a series of questions to set defaults to change the defaults.json file in the /licenses folder. 
-
+        You then will be asked a series of questions to set defaults to change the defaults.json file in the /licenses folder. 
         what is the default organization? (leave blank for NeuroLex Laboratories, Inc.) 
         what is the default organization shortname? (leave blank for NeuroLex) 
         what is the organization's primary location? (leave blank for Seattle, WA) 
@@ -108,10 +107,13 @@ You then will be asked a series of questions to set defaults to change the defau
         what is your name? (leave blank for Jim Schwoebel)
         what is your email address? (leave blank for js@neurolex.co) 
         what contact organization email would you would like to provide? (leave blank for develop@neurolex.ai) 
+        would you like to include a service statement in your code? (yes or no)
         made defaults.json
-        {'default_org': 'NeuroLex Laboratories, Inc.', 'default_shortname': 'NeuroLex', 'default_location': 'Seattle, WA', 'default_website': 'https://neurolex.ai', 'default_country': 'the United States of America', 'default_legal_location': 'Delaware, United States of America', 'default_author': 'Jim Schwoebel', 'default_author_email': 'js@neurolex.co', 'default_email': 'develop@neurolex.ai'}
+        {'default_org': 'NeuroLex Laboratories, Inc.', 'default_shortname': 'NeuroLex', 'default_location': 'Seattle, WA', 'default_website': 'https://neurolex.ai', 'default_country': 'the United States of America', 'default_legal_location': 'Delaware, United States of America', 'default_author': 'Jim Schwoebel', 'default_author_email': 'js@neurolex.co', 'default_email': 'develop@neurolex.ai', 'default_service_statement': True}
 
 This information will now work on all future executions of the license.py file. 
+
+If you'd like to include a service statement, you can in this script through editing the service_statement.txt file. It will automatically open up if you decide you want to include a service statement. Please edit this to your needs, thinking about the spacing to document your code. 
 
 ## What licenses are supported 
 

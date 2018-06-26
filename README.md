@@ -121,7 +121,7 @@ If you'd like to include a service statement, you can in this script through edi
 Currently, we support these licenses with the code base as a default. We plan on updating the library to include more licenses into the future. If you have any recommendations for licenses to add, let us know!  
 
 ### Commercial licenses 
-* [Trade secret]()
+* [Trade secret](https://en.wikipedia.org/wiki/Trade_secret)
 
 ### Research licenses 
 * [Research and academic use license](https://www.audeering.com/research-and-open-source/files/openSMILE-open-source-license.txt)

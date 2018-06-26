@@ -87,7 +87,7 @@ You then output a .txt file with the appropriate license terms (output to name_l
         We have helped a wide variety of enterprises - small businesses, 
         researchers, enterprises, and/or independent developers. 
 
-        If you would like to work with us let us know @ develop@neurolex.ai. 
+        If you would like to work with us let us know @ develop@neurolex.co. 
 
 ## Changing defaults 
 

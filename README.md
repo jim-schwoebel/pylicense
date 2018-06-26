@@ -1,6 +1,6 @@
 # PyLicense
 
-This repo is dedicated to generate software licenses automatically with python as .txt files. 
+This repo is dedicated to generating software licenses automatically for your code base. 
 
 ![](https://media.giphy.com/media/MbHWZv6FFWDnO/giphy.gif)
 

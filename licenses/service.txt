@@ -1,0 +1,10 @@
+If you are using the code written for a larger project, we are 
+happy to consult with you and help you with deployment. Our team 
+has >10 world experts in kafka distributed architectures, microservices 
+built on top of Node.JS / python / docker, and applying machine learning to 
+model speech and text data. 
+
+We have helped a wide variety of enterprises - small businesses, 
+researchers, enterprises, and/or independent developers. 
+
+If you would like to work with us let us know @ develop@neurolex.ai. 

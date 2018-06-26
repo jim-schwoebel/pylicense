@@ -7,4 +7,4 @@ model speech and text data.
 We have helped a wide variety of enterprises - small businesses, 
 researchers, enterprises, and/or independent developers. 
 
-If you would like to work with us let us know @ develop@neurolex.ai. 
+If you would like to work with us let us know @ develop@neurolex.co. 

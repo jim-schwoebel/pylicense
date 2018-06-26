@@ -4,8 +4,9 @@ This repo is dedicated to generating software licenses automatically for your co
 
 ![](https://media.giphy.com/media/MbHWZv6FFWDnO/giphy.gif)
 
-This script can create 3 classes of software licenses: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). In this way, you can paste such
-licenses as .txt files inside of all distributions of software and make sure the software is released under the appropriate license.
+This script can create 3 classes of software licenses: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). 
+
+In this way, you can paste such licenses as .txt files inside of all distributions of software and make sure the software is released under the appropriate license.
 
 Happy license-making :) 
 

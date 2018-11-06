@@ -98,7 +98,8 @@ You can easily change default settings. If you'd like to do this, type this into
         cd pylicense
         python3 set_defaults.py
 
-        You then will be asked a series of questions to set defaults to change the defaults.json file in the /licenses folder. 
+You then will be asked a series of questions to set defaults to change the defaults.json file in the /licenses folder. 
+
         what is the default organization? (leave blank for NeuroLex Laboratories, Inc.) 
         what is the default organization shortname? (leave blank for NeuroLex) 
         what is the organization's primary location? (leave blank for Seattle, WA) 

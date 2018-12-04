@@ -133,5 +133,14 @@ Currently, we support these licenses with the code base as a default. We plan on
 * [MIT License](https://opensource.org/licenses/MIT)
 * [3 clause BSD license](https://opensource.org/licenses/BSD-3-Clause)
 
+## Feedback
+Any feedback on the book or this repository is greatly appreciated. 
+* If you find something that is missing or doesn't work, please consider opening a [GitHub issue](https://github.com/jim-schwoebel/pylicense/issues).
+* If you'd like to be mentored by someone on our team, check out the [Innovation Fellows Program](http://neurolex.ai/research).
+* If you want to talk to me directly, please send me an email @ js@neurolex.co. 
+
+## License
+This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+
 ## references
 * [Other opensource licenses](https://choosealicense.com/licenses/)

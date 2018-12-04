@@ -142,5 +142,5 @@ Any feedback on the book or this repository is greatly appreciated.
 ## License
 This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
-## references
+## References
 * [Other opensource licenses](https://choosealicense.com/licenses/)

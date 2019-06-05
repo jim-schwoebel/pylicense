@@ -134,8 +134,9 @@ Currently, we support these licenses with the code base as a default. We plan on
 * [3 clause BSD license](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Feedback
-Any feedback on this repository is greatly appreciated. 
+Any feedback this repository is greatly appreciated. 
 * If you find something that is missing or doesn't work, please consider opening a [GitHub issue](https://github.com/jim-schwoebel/pylicense/issues).
+* If you want to learn more about voice computing, check out [Voice Computing in Python](https://github.com/jim-schwoebel/voicebook) book.
 * If you'd like to be mentored by someone on our team, check out the [Innovation Fellows Program](http://neurolex.ai/research).
 * If you want to talk to me directly, please send me an email @ js@neurolex.co. 
 

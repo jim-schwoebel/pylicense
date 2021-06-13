@@ -2,7 +2,7 @@
 
 This repo is dedicated to generating software licenses automatically for your code base. 
 
-![](https://media.giphy.com/media/MbHWZv6FFWDnO/giphy.gif)
+![](https://media3.giphy.com/media/xT5LMzHNDXxaCgTIjK/giphy.gif?cid=ecf05e4755a32aavmz524uavgstgfawuycvoslp0nes3fbnt&rid=giphy.gif&ct=g)
 
 This script can create 3 classes of software licenses: commercial licenses (no redistribution at all), research licenses (restrictions to not use code for commercial use), and open-source licenses (no restrictions). 
 
